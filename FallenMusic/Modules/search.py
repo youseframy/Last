@@ -27,7 +27,7 @@ from youtube_search import YoutubeSearch
 from FallenMusic import app
 
 
-@app.on_message(filters.command(["search"]) | filters.command(["بحث","ب"],prefixes= ["/", "!","","#"]))
+@app.on_message(filters.command(["search"]) | filters.command(["شغل","ش"],prefixes= ["/", "!","","#"]))
 async def ytsearch(_, message: Message):
     try:
         await message.delete()
@@ -35,7 +35,7 @@ async def ytsearch(_, message: Message):
         pass
     try:
         if len(message.command) < 2:
-            return await message.reply_text("⎊ اكتب اللى عايز تبحث عنه 🙃")
+            return await message.reply_text("⎊ اكتب اللى عايز تبحث عنه 🎧")
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("⎊ جارٍ البحث...")
         results = YoutubeSearch(query, max_results=4).to_dict()
