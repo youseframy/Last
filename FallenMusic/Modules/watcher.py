@@ -79,7 +79,7 @@ async def on_stream_end(pytgcalls, update: Update):
     else:
         process = await app.send_message(
             chat_id=chat_id,
-            text="⎊ تنزيل المسار التالي من قائمة الانتظار...",
+            text="⎊🎙🎧 انتظر يتم تشغيل الاغنيه التالي من قائمة الانتظار...",
         )
         title = get[0]["title"]
         duration = get[0]["duration"]
