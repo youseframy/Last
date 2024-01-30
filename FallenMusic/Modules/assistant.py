@@ -93,5 +93,5 @@ async def set_name(_, message: Message):
         return await message.reply_text(f" {ASS_MENTION} ‌‌‌تم تغيير الاسم")
     else:
         return await message.reply_text(
-            " اعمل ريب علي الاسم 🤓"
+            " اعمل ريب علي الاسم "
         )
