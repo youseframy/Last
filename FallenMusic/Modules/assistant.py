@@ -73,7 +73,7 @@ async def set_bio(_, message: Message):
         return await message.reply_text(f" {ASS_MENTION} تم تغيير البايو")
     else:
         return await message.reply_text(
-            " اعمل ريب علي البايو 🤓"
+            " اعمل ريب علي البايو "
         )
 
 
